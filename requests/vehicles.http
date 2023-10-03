@@ -1,0 +1,58 @@
+//se puede crear una variable para realizar las peticiones mediante esa variable
+//https://www.youtube.com/watch?v=ReK0kscoF8o&t=762s&ab_channel=FaztCode
+
+@api =  http://localhost:3000/vehicles
+
+
+
+//las peticiones se estan realizando mediante la extension (REST client)
+//se realiza la petición y clic en Send Request
+GET {{api}}
+
+//para crear un dato se debe crear un dato JSON
+//para separar las peticiones se deben agregar '###'
+
+
+//metodo post para agregar
+###
+ POST {{api}} 
+ Content-Type: application/json
+//de esta formas imprime en consola los datos
+
+ {
+   "fecha_ingreso": "2022-10-23",
+    "numero_serie": "1",
+    "placa_vehiculo": "b",
+    "foto_placa": "b",
+    "foto_contenedor": "b",
+    "foto_sello": "b",
+    "nombre_audit": "b"
+ }
+
+###
+//metodo Get para consultar por id
+GET {{api}}/80
+
+###
+//metodo para eliminar un producto
+DELETE {{api}}/76
+###
+//mostrar el total de los registros agregados
+GET {{api}}/count
+
+###
+//UPDATE
+PUT {{api}}/55
+Content-Type: application/json
+
+{
+   "fecha_ingreso": "2022-10-12",
+    "numero_serie": "1",
+    "placa_vehiculo": "b",
+    "foto_placa": "b",
+    "foto_contenedor": "b",
+    "foto_sello": "b",
+    "nombre_audit": "b"
+}
+
+

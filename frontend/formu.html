@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulario de Inserción</title>
+    <!-- Add Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <style>
+      /* Additional styles for centering the form */
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .form-container {
+        max-width: 400px;
+      }
+      .container{
+        border: 50%;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="tet-center">
+        <h1 class="mb-4">Insertar Datos</h1>
+      </div>
+
+      <form class="form" action="/postvehicles" method="post">
+        <div class="form-group">
+          <label for="fecha_ingreso">Fecha de Ingreso:</label>
+          <input
+            type="date"
+            class="form-control"
+            id="fecha_ingreso"
+            name="fecha_ingreso"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="numero_serie">Número de Serie:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="numero_serie"
+            name="numero_serie"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="placa_vehiculo">Placa del Vehículo:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="placa_vehiculo"
+            name="placa_vehiculo"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="foto_placa">Foto placa:</label>
+          <input
+            type="file"
+            class="form-control"
+            id="foto_placa"
+            name="foto_placa"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="foto_contenedor">Foto Contenedor:</label>
+          <input
+            type="file"
+            class="form-control"
+            id="foto_contenedor"
+            name="foto_contenedor"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="foto_sello">Foto Sello:</label>
+          <input
+            type="file"
+            class="form-control"
+            id="foto_sello"
+            name="foto_sello"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="nombre_audit">Nombre del Auditor:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nombre_audit"
+            name="nombre_audit"
+          />
+        </div>
+
+        <!-- Add other fields as needed -->
+
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+
+    <!-- Add Bootstrap JS (Optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

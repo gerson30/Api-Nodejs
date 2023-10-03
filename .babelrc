@@ -1,0 +1,6 @@
+//ese archivo permite que en la terminal solo se ejecute babel-node en ves de node src/index.js
+
+{
+    "presets": ["@babel/preset-env"],
+    "plugins": ["@babel/plugin-transform-runtime"]
+}
